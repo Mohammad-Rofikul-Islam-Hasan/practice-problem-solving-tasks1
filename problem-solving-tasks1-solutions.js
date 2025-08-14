@@ -50,4 +50,18 @@ function findAddress(obj) {
 
 console.log(findAddress({ street: 10, society: "Earth Perfect" }));
 
+// Problem - 5
 
+function canPay(changeArray, totalDue) {
+  if (changeArray.length === 0) {
+    return "You have no money in your pocket.";
+  }
+
+  let changeArrayTotal = 0;
+  for (i = 0; i < changeArray.length; i++) {
+    changeArrayTotal = changeArrayTotal + changeArray[i];
+  }
+  return changeArrayTotal >= totalDue;
+}
+
+console.log(canPay([], 10));
