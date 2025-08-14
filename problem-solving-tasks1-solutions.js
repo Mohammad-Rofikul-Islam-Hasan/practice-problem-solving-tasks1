@@ -32,3 +32,22 @@ function sortMaker(arr) {
 }
 
 console.log(sortMaker([1, 3]));
+
+// Problem - 4
+
+function findAddress(obj) {
+  if (obj.street === undefined) {
+    obj.street = "__";
+  }
+  if (obj.house === undefined) {
+    obj.house = "__";
+  }
+  if (obj.society === undefined) {
+    obj.society = "__";
+  }
+  return `${obj.street},${obj.house}, ${obj.society}`;
+}
+
+console.log(findAddress({ street: 10, society: "Earth Perfect" }));
+
+
